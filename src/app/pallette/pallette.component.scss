@@ -1,0 +1,10 @@
+.grid-container {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  gap: 12px 12px;
+    div {
+      height: 200px;
+    }
+}

@@ -1,5 +1,5 @@
 <div class="grid-container">
   <ng-container *ngFor="let color of doublePallette; let i = index">
-    <div [class]="'block-' + i" [ngStyle]="{'background-color': color}"></div>
+    <div class="animateScale" [class]="'block-' + i" [ngStyle]="{'background-color': color}"></div>
   </ng-container>
 </div>

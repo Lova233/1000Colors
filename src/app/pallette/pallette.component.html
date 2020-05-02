@@ -1,0 +1,7 @@
+<div class="grid-container">
+  <ng-container *ngFor="let pallette of singlePallette; let i = index">
+    <ng-container *ngFor="let color of pallette">
+      <div class="animateScale"  [ngStyle]="{'background-color': color}">{{color}}</div>
+    </ng-container>
+  </ng-container>
+</div>

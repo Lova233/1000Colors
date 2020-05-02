@@ -1,6 +1,9 @@
 <h3 class="title">1000 Colors</h3>
 <ng-container *ngFor="let pallette of pallettes">
   <div class="container">
-    <app-grid [pallette]="pallette" style="margin-bottom: 12px;"></app-grid>
+    <!-- <app-grid [pallette]="pallette" style="margin-bottom: 12px;"></app-grid> -->
   </div>
 </ng-container>
+<div class="container">
+  <app-pallette [singlePallette]="singlePallette"></app-pallette>
+</div>

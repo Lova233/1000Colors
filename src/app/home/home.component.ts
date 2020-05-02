@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pallette } from '../pallette';
 declare function require(name: string);
-
+0
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,18 +9,27 @@ declare function require(name: string);
 })
 export class HomeComponent implements OnInit {
 
-  pallettes: Pallette[] = [];
+
+  colors = require('nice-color-palettes');
+  singlePallette: Pallette[] = this.colors;
+  doublePallettes: Pallette[] = [];
 
   constructor() { }
 
   ngOnInit() {
-    const colors = require('nice-color-palettes');
+  }
 
-    const size = 2;
 
-    while (colors.length > 0) {
-      this.pallettes.push(colors.splice(0, size));
+  // this will get an array of pallettes grouped in 2;
+    getDoublePallette() {
+      const size = 2;
+
+      while (this.colors.length > 0) {
+        this.doublePallettes.push(this.colors.splice(0, size));
+      }
+
+      return this.doublePallettes;
     }
   }
 
-}
+

@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+.animateScale {
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+}
+.animateScale:hover {
+  // filter: invert(1);
+  transform: scale(1.03);
+}

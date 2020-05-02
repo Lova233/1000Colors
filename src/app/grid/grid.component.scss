@@ -7,14 +7,8 @@
   gap: 12px 15px;
   margin-bottom: 12px;
   grid-template-areas: "one one two three" "four five six six" "four seven eight eight" "nine nine ten ten";
-
-  div {
-    border-radius: 10px;
-  }
-  div:hover {
-    filter: invert(1);
-  }
 };
+
 
 .block-0 { grid-area: one; }
 
